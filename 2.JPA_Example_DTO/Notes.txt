@@ -1,0 +1,15 @@
+Steps to use ModelMapper
+
+1. Google 'Modelmapper maven dependency' and copy it in pom.xml
+2. create a DTO (UserDto) class if not created already.
+2. create a bean of ModelMapper class in main or configuration class.
+3. create a reference of ModelMapper in serviceImpl
+4. use it's map() method to map jpa entity to dto and vice-versa.
+
+********************************************************************************
+
+Steps to use MapStrut
+
+1. copy the dependency of MapStrut from mapstrut website.
+2. copy the plugin of mapstrut in order to work mapstrut along with lombok.
+3. copy the versions of the mapstrut in top <properties> tag.
