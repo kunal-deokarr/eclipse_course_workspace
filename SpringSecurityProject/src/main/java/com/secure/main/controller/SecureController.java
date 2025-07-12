@@ -13,6 +13,19 @@ import com.secure.main.entity.Student;
 
 import jakarta.servlet.http.HttpServletRequest;
 
+/**
+ * 
+ */
+/**
+ * @param stu
+ * @return
+ */
+/**
+ * 
+ */
+/**
+ * 
+ */
 @RestController
 public class SecureController {
 
@@ -27,6 +40,15 @@ public class SecureController {
 	{
 		return sList;
 	}
+	
+	/*
+	 * this getCsrfToken method is used to hit this "/post" api or "postStudent()" method from postman
+	 * in postman, before hitting the /post api by POST request, we will have to hit this /csrftoken api
+	 * by which it will provide us a token and header name, we will have to copy it and then at the time of hitting the 
+	 *  /post api in postman, in header section we'll need to paste this token in value column with header name
+	 *  ie X-CSRF-TOKEN in key column. After following this procedure only we'll be able to hit /post api, 
+	 *  without it we'll not be able to hit /post api.
+	*/
 	
 	@GetMapping("/csfrtoken")
 	public CsrfToken getCsrfToken(HttpServletRequest request)

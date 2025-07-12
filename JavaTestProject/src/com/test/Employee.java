@@ -2,6 +2,10 @@ package com.test;
 
 public class Employee {
 
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	int id;
 	 @Override
 	public String toString() {
